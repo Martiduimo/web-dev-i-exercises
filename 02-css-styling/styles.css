@@ -1,0 +1,52 @@
+/*  
+  Exercise 2 – CSS Styling  
+  Author: Martins Kingsley Iduimo  
+  Description: Basic CSS styles for text, colours, spacing, and layout.  
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f6f6f6;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Section titles */
+h2 {
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* Introduction section */
+.intro {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Features section */
+.features {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.features ul li {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
