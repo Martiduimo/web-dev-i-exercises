@@ -1,2 +1,95 @@
-<!-- Exercise 3: Page Layout
-     Author: Martins Kingsley Iduimo -->
+<!-- 
+  Exercise 3 – Page Layout
+  Author: Martins Kingsley Iduimo
+  Description: Demonstration of CSS page layout using Flexbox.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout Exercise</title>
+
+    <style>
+        /* Basic page reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Main layout container */
+        .layout-container {
+            display: flex;
+            min-height: 80vh;
+        }
+
+        /* Sidebar */
+        aside {
+            width: 25%;
+            background: #f3f3f3;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Main content */
+        main {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            box-shadow: 0px 0px 5px #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Page Layout Using Flexbox</h1>
+    </header>
+
+    <div class="layout-container">
+
+        <aside>
+            <h2>Sidebar</h2>
+            <ul>
+                <li>Home</li>
+                <li>Articles</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </aside>
+
+        <main>
+            <div class="card">
+                <h2>Main Content Section</h2>
+                <p>This is the main area of the page, styled using Flexbox for layout.</p>
+            </div>
+
+            <div class="card">
+                <h3>Another Content Block</h3>
+                <p>Using cards makes your layout look clean and structured.</p>
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 – Web Dev Exercises</p>
+    </footer>
+
+</body>
+</html>
